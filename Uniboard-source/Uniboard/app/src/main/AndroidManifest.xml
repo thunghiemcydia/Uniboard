@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/uniboard_logo" android:roundIcon="@drawable/uniboard_logo" android:allowBackup="false">
+        <activity android:name=".MainActivity" android:label="@string/app_name" android:icon="@drawable/uniboard_logo" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+        <service android:name=".VietIme" android:label="@string/app_name" android:icon="@drawable/uniboard_logo" android:permission="android.permission.BIND_INPUT_METHOD" android:exported="true">
+            <intent-filter><action android:name="android.view.InputMethod"/></intent-filter><meta-data android:name="android.view.im" android:resource="@xml/method"/>
+        </service>
+    </application>
+</manifest>
